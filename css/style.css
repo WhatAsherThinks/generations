@@ -1,6 +1,7 @@
 
 
 @import url('https://fonts.googleapis.com/css?family=Spectral+SC:700');
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One|Neuton');
 
 *{
   box-sizing: border-box;
@@ -15,7 +16,7 @@ html{
 
 body{
   padding-top: 5rem;
-    background: RGBA(120, 120, 120, 1.00);
+  background: RGBA(40, 40, 40, 1.00);
 }
 
 /*==============================
@@ -23,13 +24,14 @@ body{
 ===============================*/
 
 .top-nav{
-  background: RGBA(120, 120, 120, 1.00);
+  background: RGBA(40, 40, 40, 1.00);
   height: 4rem;
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
-  font-size: 2rem;
+  font-size: 2.4rem;
+  font-family: 'Neuton', bold;
   order: 0;
 }
 
@@ -69,18 +71,17 @@ list-style-type: none;
   text-align: center;
 }
 
-/*.title h1{
-  display: block;
-  text-align: center;
-  font-size: 4rem;
-  color: RGBA(40, 40, 40, 1.00);
-}*/
+.title a{
+  color:blue;
+  font-family: 'Alfa Slab One', bold;
+}
 
 .screen-image{
   background-image: url("../images/youngmed.jpeg");
   background-size: cover;
   background-position: center;
   height: calc(100vh - 60px);
+  transition: 1s;
 }
 
 .screen-image:hover{
@@ -105,6 +106,7 @@ list-style-type: none;
 .body-text{
   text-align: left;
   font-size: 2rem;
+  font-family: 'Neuton', serif;
 }
 
 @media (max-width: 700px) {
@@ -114,4 +116,45 @@ list-style-type: none;
   .col-3{
     width: 100%;
   }
+}
+
+
+/* =============================
+            FOOTER
+============================= */
+.main-footer{
+    background: RGBA(40, 40, 40, 1.00);
+    height: 6rem;
+    /* position: fixed; */
+    border-top: 1rem double RGBA(255, 255, 255, 1.00);
+    margin-top: 3rem;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    font-size: 1.8rem;
+    font-family: 'Neuton', bold;
+    color: RGBA(255, 255, 255, 1.00);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+/* .main-footer a{
+  display: inline-block;
+  text-align:center;
+} */
+
+/* =============================
+          GALLERY
+============================= */
+
+.col-2{
+  width: 50%;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 6rem;
+}
+
+.col-2 img{
+  width: 100%;
 }
