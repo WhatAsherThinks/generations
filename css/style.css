@@ -72,11 +72,11 @@ list-style-type: none;
 }
 
 .title a{
-  color:blue;
-  font-family: 'Alfa Slab One', bold;
+  color: RGBA(40, 40, 40, 1.00);
+  font-family: 'Alfa Slab One';
 }
 
-.screen-image{
+.index-screen-image{
   background-image: url("../images/youngmed.jpeg");
   background-size: cover;
   background-position: center;
@@ -84,7 +84,7 @@ list-style-type: none;
   transition: 1s;
 }
 
-.screen-image:hover{
+.index-screen-image:hover{
   background-image: url("../images/oldmd.jpeg");
   background-position: center;
   transition: 1s;
@@ -118,32 +118,6 @@ list-style-type: none;
   }
 }
 
-
-/* =============================
-            FOOTER
-============================= */
-.main-footer{
-    background: RGBA(40, 40, 40, 1.00);
-    height: 6rem;
-    /* position: fixed; */
-    border-top: 1rem double RGBA(255, 255, 255, 1.00);
-    margin-top: 3rem;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-    font-size: 1.8rem;
-    font-family: 'Neuton', bold;
-    color: RGBA(255, 255, 255, 1.00);
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
-
-/* .main-footer a{
-  display: inline-block;
-  text-align:center;
-} */
-
 /* =============================
           GALLERY
 ============================= */
@@ -157,4 +131,154 @@ list-style-type: none;
 
 .col-2 img{
   width: 100%;
+}
+
+/* ================================
+            CONTACT
+================================ */
+
+.contact-form-container{
+  width: 100vw;
+  display: flex;
+  /*align-items: center;*/
+  justify-content: center;
+  margin-top: 6rem;
+}
+
+.gene-contact-form{
+  padding:1rem;
+  height: 66.66%;
+  width: 100%
+}
+
+.gene-contact-header{
+  text-align: center;
+  color: white;
+  font-size: 3rem;
+  padding: 2rem;
+}
+
+.gene-contact-form input[type="text"], .gene-contact-form input[type="email"], .gene-contact-form input[type="number"]{
+  width: 100%;
+  padding: 1rem;
+  display: inline-block;
+  font-size: 1.6rem;
+  border: .3rem solid RGBA(255, 255, 255, 1.00);
+}
+
+.contact-gene-age{
+  padding: 2rem;
+  font-size: 2rem;
+  color: RGBA(255, 255, 255, 1.00);
+  text-align: center;
+  font-size: 2rem;
+}
+
+.contact-gene-age label{
+  margin: 1rem 2rem;
+  text-align: center;
+  font-size: 1.6rem;
+  color: RGBA(255, 255, 255, 1.00);
+}
+
+.contact-gene-comment{
+  justify-content: center;
+  text-align: center;
+  margin: 1rem 2rem;
+  font-size: 2rem;
+  color: RGBA(255, 255, 255, 1.00);
+  /* background: RGBA(111, 125, 149, 0.8); */
+}
+
+.contact-gene-comment textarea{
+  width: calc(100% - 3rem);
+  height: 10.5rem;
+  font-size: 1.6rem;
+  padding-left: 1rem;
+  margin: 1rem 1rem;
+  border: .3rem solid RGBA(255, 255, 255, 1.00);
+}
+
+.contact-gene-submit{
+  text-align: right;
+}
+
+.button{
+  font-size: 2rem;
+  display: inline-block;
+  border-radius: .5rem;
+  padding: 1rem 1rem;
+  border: .3rem solid RGBA(255, 192, 203, 1.00);
+  color: RGBA(255, 255, 255, 1.00);
+  background: RGBA(40, 40, 40, 1.00);
+}
+
+.contact-row{
+  display: flex;
+  /* background: RGBA(111, 125, 149, 0.8); */
+}
+
+.contact-col-2{
+  width: 50%;
+  padding: 1rem;
+  font-size: 2rem;
+  color: RGBA(255, 255, 255, 1.00);
+}
+
+.contact-col-4{
+  width: 25%;
+  padding: 1rem;
+  /* background: RGBA(111, 125, 149, 0.8); */
+}
+
+/* ==============================
+ABOUT
+============================== */
+
+.about-screen-image{
+  background-image: url("../images/kidmed1.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: calc(100vh - 60px);
+  transition: 1s;
+}
+
+.about-screen-image:hover{
+  background-image: url("../images/youngmed1.jpeg");
+  background-position: center;
+  transition: 1s;
+  }
+
+
+.about-content{
+  font-size: 2.4rem;
+  font-family: 'Neuton', serif;
+  text-align: center;
+  margin-top: 6rem;
+}
+
+/* =============================
+            FOOTER
+============================= */
+.main-footer{
+    background: RGBA(40, 40, 40, 1.00);
+    height: 6rem;
+    border-top: 1rem double RGBA(255, 255, 255, 1.00);
+    width: 100%;
+    bottom: 0;
+    order: 3;
+    left: 0;
+    margin-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 1.8rem;
+    font-family: 'Neuton', bold;
+    color: RGBA(255, 255, 255, 1.00);
+
+}
+
+.main-footer a{
+  display: inline-block;
+  text-align:center;
 }
